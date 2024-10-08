@@ -13,4 +13,7 @@ except importlib.metadata.PackageNotFoundError:
 class Widget(anywidget.AnyWidget):
     _esm = pathlib.Path(__file__).parent / "static" / "widget.js"
     _css = pathlib.Path(__file__).parent / "static" / "widget.css"
+    
+    # Traitlets for the widget state
     value = traitlets.Int(0).tag(sync=True)
+    files = traitlets.List(trait=traitlets.Unicode()).tag(sync=True)  # New traitlet for handling file names
