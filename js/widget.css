@@ -1,23 +1,23 @@
-.ipydrop button {
-	background: linear-gradient(
-		300deg,
-		#9933ff 33.26%,
-		#ff6666 46.51%,
-		#faca30 59.77%,
-		#00cd99 73.03%,
-		#00ccff 86.29%
-	);
-	border-radius: 10px;
-	border: 0;
-	color: white;
-	cursor: pointer;
-	font-family: "Roboto", sans-serif;
-	font-size: 2em;
-	margin: 10px;
-	padding: 10px 20px;
-	transition: transform 0.25s ease-in-out;
+/* Style for the drop area */
+.drop-area {
+    border: 2px dashed #ffa726; /* Light orange border */
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #ff9800; /* Orange text color */
+    background-color: #fff3e0; /* Light orange background */
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-.ipydrop button:hover {
-	transform: scale(1.05);
+/* Highlight the drop area on drag over */
+.drop-area.dragover {
+    border-color: #fb8c00; /* Darker orange border on drag over */
+    background-color: #ffe0b2; /* Slightly darker background on drag over */
+    color: #e65100; /* Darker orange text */
+}
+
+/* General widget container style */
+.ipydrop {
+    width: 100%;
+    height: 100%;
 }
