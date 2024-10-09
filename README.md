@@ -2,9 +2,7 @@
 
 ## Installation
 
-```sh
-pip install ipydrop
-```
+
 
 ## Development installation
 
@@ -27,3 +25,17 @@ npm run dev
 Open `example.ipynb` in JupyterLab, VS Code, or your favorite editor
 to start developing. Changes made in `js/` will be reflected
 in the notebook.
+
+
+## Run marimo example
+
+
+`marimo edit --sandbox example_ipydrop_csv.py` 
+
+
+## Run notebook example
+
+```sh
+pip install ipydrop
+jupyterlab
+```
