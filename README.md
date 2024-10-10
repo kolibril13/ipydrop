@@ -10,9 +10,7 @@ Create a virtual environment and and install ipydrop in *editable* mode with the
 optional development dependencies:
 
 ```sh
-python -m venv .venv
-source .venv/bin/activate
-pip install -e ".[dev]"
+uv sync
 ```
 
 You then need to install the JavaScript dependencies and run the development server.
@@ -30,7 +28,7 @@ in the notebook.
 ## Run marimo example
 
 
-`marimo edit --sandbox example_ipydrop_csv.py` 
+`uvx marimo edit --sandbox example_ipydrop_csv.py` 
 
 
 ## Run notebook example
