@@ -8,8 +8,8 @@ version = "0.0.1"
 dependencies = ["anywidget"]
 readme = "README.md"
 
-[project.optional-dependencies]
-dev = ["watchfiles", "jupyterlab"]
+[tool.uv]
+dev-dependencies = ["watchfiles", "jupyterlab"]
 
 # automatically add the dev feature to the default env (e.g., hatch shell)
 [tool.hatch.envs.default]
