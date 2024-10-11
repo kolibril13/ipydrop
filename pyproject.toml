@@ -8,6 +8,11 @@ version = "0.0.1"
 dependencies = ["anywidget"]
 readme = "README.md"
 
+[project.urls]
+Homepage = "https://github.com/kolibril13/ipydrop"
+Source = "https://github.com/kolibril13/ipydrop"
+Tracker = "https://github.com/kolibril13/ipydrop/issues"
+
 [tool.uv]
 dev-dependencies = ["watchfiles", "jupyterlab"]
 
